@@ -1,7 +1,6 @@
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
-    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -51,13 +50,29 @@ li a:link, li a:visited, li a:hover, li a:active {
 .hero {
     background-color: #1F2937;
     color:#F9FaF8;
-    padding: 0px 64px;
+    padding: 64px 64px;
 
     flex-grow: 1;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 32px;
+}
+
+.hero-content {
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 8px;
+}
+
+.hero-header {
+    font-size: 48px;
+    font-weight: 800;
 }
 
 .hero-button, .signup-button {
@@ -76,6 +91,10 @@ li a:link, li a:visited, li a:hover, li a:active {
 /* Cards */
 .cards {
     background-color:#F9FaF8;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
 
     flex-grow: 1;
 
@@ -105,6 +124,7 @@ li a:link, li a:visited, li a:hover, li a:active {
 /* Quote */
 .quote {
     background-color: #E5E7EB;
+    padding: 64px 0px;
 
     flex-grow: 1;
 
@@ -128,6 +148,7 @@ li a:link, li a:visited, li a:hover, li a:active {
 /* Signup */
 .signup {
     background-color: white;
+    padding: 64px;
 
     flex-grow: 1;
 
@@ -139,11 +160,12 @@ li a:link, li a:visited, li a:hover, li a:active {
 .signup-box {
     background-color: #3882F6;
     color: #F9FaF8;
-    width: 300px;
-    height: 200px;
+    padding: 64px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 64px 128px;
 }
 
 .signup-button {
