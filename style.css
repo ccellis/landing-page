@@ -2,8 +2,20 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Placeholders */
+.hero-image, .card-image {
+    width: 150px;
+    height: 150px;
+    background-color:red;
+    border: 2px maroon solid;
 }
 
+/* Header */
 .header {
     background-color: #1F2937;
     color: #F9FaF8;
@@ -29,6 +41,124 @@ body {
 }
 
 li a:link, li a:visited, li a:hover, li a:active {
-    color:#F9FaF8;
+    color: #E5E7EB;
+    font-size: 16px;
+    font-weight: lighter;
     text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    background-color: #1F2937;
+    color:#F9FaF8;
+    padding: 0px 64px;
+
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-button, .signup-button {
+    background-color: #3882F6;
+    color:#F9FaF8;
+}
+
+.hero-button {
+    border: black;
+}
+
+.hero-image {
+    flex-shrink: 0;
+}
+
+/* Cards */
+.cards {
+    background-color:#F9FaF8;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.card {
+    color: #1F2937;
+    width: 154px; /* Needs to be width of image */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Quote */
+.quote {
+    background-color: #E5E7EB;
+
+    flex-grow: 1;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-content {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+}
+
+.quote-attribution {
+    color: #1F2937;
+}
+
+/* Signup */
+.signup {
+    background-color: white;
+
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-box {
+    background-color: #3882F6;
+    color: #F9FaF8;
+    width: 300px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+}
+
+.signup-button {
+    border-color:#F9FaF8;
+}
+
+/* Footer */
+.footer {
+    background-color: #1F2937;
+    color: #F9FaF8;
+    font-size: 12px;
+    font-weight: lighter;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
 }
