@@ -4,3 +4,31 @@ body {
     min-height: 100vh;
 }
 
+.header {
+    background-color: #1F2937;
+    color: #F9FaF8;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-links {
+    display: flex;
+    gap: 16px;
+}
+
+.header-links li {
+    list-style-type: none;
+}
+
+li a:link, li a:visited, li a:hover, li a:active {
+    color:#F9FaF8;
+    text-decoration: none;
+}
