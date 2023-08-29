@@ -142,7 +142,7 @@ li a:link, li a:visited, li a:hover, li a:active {
 }
 
 .quote-box {
-    width: 900px;
+    max-width: 900px;
 
     display:flex;
     flex-direction: column;
@@ -155,6 +155,8 @@ li a:link, li a:visited, li a:hover, li a:active {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
+
+    display: flex;
 }
 
 .quote-attribution {
